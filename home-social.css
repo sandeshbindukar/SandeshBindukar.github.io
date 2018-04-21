@@ -1,0 +1,167 @@
+html
+{
+	height: 100%;
+}
+body
+{
+	height: 100%;
+	width: 100%;
+	margin: 0%;
+	padding: 0%;
+	background-color:rgba(188, 196, 209,.8);
+}
+
+/*Design for navigation bar*/
+.navigationbar 
+{
+	 display: flex;
+	 justify-content: space-around;
+	 background-color:#e6e6ff;
+	 opacity: 0.8;
+	 overflow: hidden;
+	 padding-top: 1%;
+}
+
+
+ .navigationbar a 
+{
+	float: left;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	padding: 12px 10px;
+}
+
+.navigationbar a:hover
+{
+	color: white;
+	background-color:  #999966;
+}
+
+.navigationbar a.active
+{
+	color:white;
+	background-color:  #999966;
+}
+
+.background-image
+{
+	width: 100%;
+	margin:0%;
+	padding:0%;
+	background-size:cover;
+}
+.intro
+{ 
+   position: absolute;
+   top: 200px;
+   width: 300px;
+   font-size: 20px;
+}
+ .intro h2
+{
+   color: black;
+   position:absolute;
+   width: 100%;
+   margin-left: 100%;
+   margin-top: 80%;
+   font-family: sans-serif;
+}
+.intro h3
+{
+   color: black;
+   position:absolute;
+   width: 100%;
+   margin-left: 120%;
+   margin-top: 80%;
+   font-family: sans-serif;
+}
+/*For footer section*/
+footer{
+	 display: flex;
+	 position:absolute;
+	 background-color:rgba(188, 196, 209,.8);
+	 width: 100%;
+}
+footer p
+{
+	font-weight: bold;
+}
+.footer-address
+{
+	padding-left: 3%;	
+	padding-top: 1%;
+}
+.footer-social
+{
+	 color:black;
+	text-align: center;
+	padding-top: 3%;
+}
+.footer-copyright
+{
+	padding-left: 10%;
+	padding-top: 3%;	
+}
+.fa {
+	color: black;
+    padding: 1%;
+   	text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/*For logo of social page*/
+.logo img{
+	width: 200px;
+	height: 200px;
+	margin: 0.1%;
+	padding: 0.5%;
+	padding-top: 3%;
+
+}
+.logo-divide{
+	width: 100%;
+	background-color: #ffdfbf;
+	border:1px solid black;
+	padding-bottom: 13%;
+	
+}
+.logo-divide h2
+{
+	margin-top: 0%;
+}
+
+/*For responsive design*/
+@media screen and (max-width: 600px)
+{
+	.navigationbar
+	{
+		flex-direction: column;
+	}
+	.intro
+	{
+		font-size: 10px;
+		position:absolute;
+		right:85%;
+	}
+
+	footer
+	{
+		flex-direction: column;
+	}
+	.footer-copyright 
+	{
+		margin: 0;
+		padding: 0;
+	}
+	.footer-social
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+}

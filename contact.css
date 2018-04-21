@@ -1,0 +1,146 @@
+body
+{
+	height: 100%;
+	width:100%;
+	margin: 0;
+	background-color: #ffdfbf;
+}
+/*Design for navigation bar*/
+.navigationbar 
+{
+	 display: flex;
+	 justify-content: space-around;
+	 background-color:#e6e6ff;
+	 opacity: 0.8;
+	 overflow: hidden;
+	 padding-top: 1%;
+}
+ .navigationbar a 
+{
+	float: left;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	padding: 12px 10px;
+}
+
+.navigationbar a:hover
+{
+	color: white;
+	background-color:  #999966;
+}
+
+.navigationbar a.active
+{
+	color:white;
+	background-color:  #999966;
+}
+/*For body part*/
+.container-1
+{
+	display: flex;
+}
+.container-1 div
+{
+	padding: 4%;
+
+}
+p
+{
+	font-size: 18px;
+	color: teal;
+}
+.box1{
+
+	color: teal;
+}
+.box1 iframe /*For map*/
+{
+	width:400px;
+	height:300px; 
+	border:0;
+}	
+
+.box2
+{
+	width: 100%;
+
+}
+/*for contact form */
+.box2 form
+{
+	margin: 0.5%;
+	padding: 5%;
+	color: teal;
+}
+strong
+{
+	font-size: 20px;
+	padding: 5%;
+	color: black
+}
+/*Footer Section*/
+footer{
+	 display: flex;
+	 position:absolute;
+	 background-color:rgba(188, 196, 209,.8);
+	 width: 100%;	 
+}
+footer p
+{
+	font-weight: bold;
+	color:black;
+}
+.footer-address
+{
+	padding-left: 3%;	
+	padding-top: 1%;
+}
+.footer-social
+{
+	text-align: center;
+	padding-top: 3%;
+}
+.footer-copyright
+{
+	padding-left: 10%;
+	padding-top: 3%;	
+}
+.fa {
+	color: black;
+    padding: 1%;
+   	text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+/*For responsive design*/
+@media screen and (max-width: 600px)
+{
+	.navigationbar
+	{
+		flex-direction: column;
+	}
+	.container-1
+	{
+		flex-direction: column;
+	}
+	footer
+	{
+		flex-direction: column;
+	}
+	.footer-copyright 
+	{
+		margin: 0;
+		padding: 0;
+	}
+	.footer-social
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+}

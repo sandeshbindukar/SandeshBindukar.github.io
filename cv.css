@@ -1,0 +1,135 @@
+body{
+	height: 100%;
+	width:100%; 
+	margin: 0;
+	background-color: #ffdfbf;
+	}
+/*Design for navigation bar*/
+.navigationbar 
+{
+	 display: flex;
+	 justify-content: space-around;
+	 background-color:#e6e6ff;
+	 opacity: 0.8;
+	 overflow: hidden;
+	 padding-top: 1%;
+}
+ .navigationbar a 
+{
+	float: left;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	padding: 12px 10px;
+}
+
+.navigationbar a:hover
+{
+	color: white;
+	background-color:  #999966;
+}
+.navigationbar a.active
+{
+	color:white;
+	background-color:  #999966;
+}
+
+.container-1
+{
+	border:1px solid black;
+	display: flex;
+}
+.container-1 div
+{
+	padding: 1%;
+}
+.container-1 p
+{
+	color: teal;
+}
+.box-1 img
+{
+	height: 350px;
+}
+
+.box-2{}
+
+.box-3{}
+
+.name
+{
+	position: absolute;
+	bottom: 40%;
+	left:1.5% ;
+	color: green;
+}
+/*For footer section*/
+footer{
+	 display: flex;
+	 position:absolute;
+	 background-color:rgba(188, 196, 209,.8);
+	 width: 100%;	 
+}
+footer p
+{
+	font-weight: bold;
+}
+.footer-address
+{
+	padding-left: 3%;	
+	padding-top: 1%;
+}
+.footer-social
+{
+	 color:black;
+	text-align: center;
+	padding-top: 3%;
+}
+.footer-social .fa {
+	color: black;
+    padding: 1%;
+   	text-align: center;
+    text-decoration: none;
+}
+.footer-social .fa:hover {
+    opacity: 0.7;
+}
+.footer-copyright
+{
+	padding-left: 10%;
+	padding-top: 3%;	
+}
+/*For responsive design*/
+@media screen and (max-width: 600px)
+{
+	.navigationbar
+	{
+		flex-direction: column;
+	}
+	.container-1
+	{
+		flex-direction: column;
+	}
+	.name
+	{
+		position: relative;
+	}
+	
+	footer
+	{
+		flex-direction: column;
+	}
+	.footer-copyright 
+	{
+		margin: 0;
+		padding: 0;
+	}
+	.footer-social
+	{
+		margin: 0;
+		padding: 0;
+	}
+
+}
